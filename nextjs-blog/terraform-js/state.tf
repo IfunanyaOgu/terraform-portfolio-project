@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "ify-my-terraform-state"
+    bucket = "if-my-tf-website-state"
     key = "global/s3/terraform.tfstate"
     region = "eu-west-2"
-    dynamodb_table = "terraform-lock-file"
+    dynamodb_table = "ify-db-website-table"
   }
 }
